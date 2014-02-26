@@ -1,0 +1,43 @@
+{
+	"students": [
+		{
+			"name": "Alexander K.",
+			"comment": "0: A100 matched me up with a job as a web developer at MEA mobile.",
+			"college": "Yale",
+			"partner": "MEA Mobile",
+			"photo": "alexander.jpg"
+		}, 
+		{
+			"name": "Tom Sonnemann",
+			"comment": "1: I joined the A100 Program to supplement my CS degree from Southern with some experience building real-world projects and to find an awesome company to join. After a successful apprenticeship with Independent Software, I'm now working as a full time developer.",
+			"college": "Yale",
+			"partner": "@ Independent Software",
+			"photo": "tom.jpg"
+		},
+		{
+			"name": "Victor Mutai",
+			"comment": "2: Through A100, my teamwork, coding, and communication skills have improved immensely.",
+			"college": "Yale",
+			"partner": "Current A100 Apprentice",
+			"photo": "victor.jpg"
+		},
+		{
+			"name": "John Devivo",
+			"comment": "3: A100 is teaching me the skills I need to succeed as a software engineer.",
+			"college": "Yale",
+			"partner": "Current A100 Apprintice",
+			"photo": "jenny.jpg"
+		}
+	],
+
+	"partners": [
+		{
+			"name": "Ted Yang",
+			"comment": "1: Connecticut can fund startups; we can offer them places to work. We can do all that, but if we don't have developers, we're going nowhere. The A100 Program provided me with a great Apprentice, whom I hired immediately after his apprenticeship.",
+			"college": "Yale",
+			"partner": "Founder of MediaCrossing",
+			"more": "a founder of MediaCrossing in Stamford, a digital media trading company.",
+			"photo": "ted.jpg"
+		}
+	]
+}
