@@ -71,7 +71,7 @@ html, body {
 
 /**** test ***/
 .gallery-wrap {
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
 }
 
 figure {
@@ -128,7 +128,7 @@ figure figcaption {
 }
 
 /** test **/
-#chepnet .container {
+#chepnet .container div {
     max-width: 1024px;
 }
 
@@ -154,6 +154,10 @@ figure figcaption {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
+}
+
+#about-us .section-title {
+    margin-top: 40px;
 }
 
 #about-us .section-title-minor h2 {
@@ -211,9 +215,10 @@ figure figcaption {
 .footer {
     color: #777;
     background-color: #f5f5f5;
-    padding-top: 30px;
+    background-color: rgba(220,220,220,1);
+    //padding-top: 30px;
     padding-bottom: 30px;
-    margin-top: 50px;
+    padding-top: 80px;
 }
 
 .footer .container .col-md-4 {
@@ -222,4 +227,16 @@ figure figcaption {
 
 .list-group-item {
     cursor: pointer;
+}
+
+#chepnet > .container-wrapper {
+    padding-bottom: 20px;
+}
+
+#chepnet > .container-wrapper:nth-child(even) {
+    background-color: white;
+}
+
+#chepnet > .container-wrapper:nth-child(odd) {
+    background-color: rgba(220,220,220,1);
 }
