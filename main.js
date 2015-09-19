@@ -25,7 +25,9 @@ $(document).ready(function() {
     	goToByScroll(id);   
     	history.pushState({}, '', $(this).attr("href"));   
 
-    	$("#navbar-collapse-button").trigger("click");
+    	if ($(window).width() < 767) {
+            $("#navbar-collapse-button").trigger("click");
+        }
 	});
 
 });
