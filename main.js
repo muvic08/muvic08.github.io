@@ -17,10 +17,12 @@ $(document).ready(function() {
     }
 
     window.IsAutoScrolling = false;
+    var myTimeOut;
 
 	$("#navbarCollapse > ul > li > a").click(function(e) { 
     	e.preventDefault(); 
         window.IsAutoScrolling = true;
+        clearTimeout(myTimeOut);
 
     	$("#navbarCollapse > ul > li").removeClass("active");
     	$(this).parent().addClass("active");
@@ -35,7 +37,7 @@ $(document).ready(function() {
             $("#navbar-collapse-button").trigger("click");
         }
 
-        setTimeout(function() { window.IsAutoScrolling = false; }, 750);
+        myTimeOut = setTimeout(function() { window.IsAutoScrolling = false; }, 750);
 	});
 
 
@@ -70,15 +72,18 @@ $(document).ready(function() {
         cur = cur[cur.length-1];
         var id = cur && cur.length ? cur[0].id : "";
 
-        console.log(window.IsAutoScrolling);
-        if(!window.IsAutoScrolling){ 
-            var id_hash = "#" + id;
-            setTimeout(updateHistory(id_hash), 300);
-        }
+        // console.log(window.IsAutoScrolling);
+        // if(!window.IsAutoScrolling){ 
+        //     var id_hash = "#" + id;
+        //     setTimeout(updateHistory(id_hash), 300);
+        // }
         // Set/remove active class
-        menuItems
-            .parent().removeClass("active")
-            .end().filter("[href=#"+id+"]").parent().addClass("active");
+        if(!window.IsAutoScrolling){ 
+            menuItems
+                .parent().removeClass("active")
+                .end().filter("[href=#"+id+"]")
+                .parent().addClass("active");
+        }
 
     });
 
