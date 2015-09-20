@@ -1,4 +1,7 @@
 @purple: rgba(153,102,153,1);
+@para-font-size: 16px;
+@font-family-body:  "proxima-nova";
+@font-color-body: rgba(26,26,26,.8);
 
 html, body {
 	background-color: rgba(250,250,250,1);
@@ -41,6 +44,9 @@ html, body {
 #chepnet .navbar-default .navbar-nav>li>a {
     color: rgba(210,210,210,1);
     text-shadow: 0 0px 0 rgba(255,255,255,.25);
+    //font-family: "proxima-nova";
+    //text-transform: uppercase;
+    //font-size: 14px;
 }
 
 #chepnet .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
@@ -141,8 +147,12 @@ figure figcaption {
     line-height: 22px;
     margin-bottom: 10px;
     display: inline-block;
-    font-size: 15px;
     color: rgba(50,50,50,1);
+    font-family: @font-family-body;
+    font-size: @para-font-size;
+    font-size: 16px;
+    line-height: 1.7em;
+    color: @font-color-body;
 }
 
 #chepnet .container ul li { 
@@ -183,7 +193,7 @@ figure figcaption {
 
 #chepnet .container .section-item {
     //text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 700px) {
@@ -229,9 +239,13 @@ figure figcaption {
     margin-bottom: 10px;
 }
 
-.list-group-item {
+#chepnet .list-group-item {
     cursor: pointer;
     border-color: rgba(200,200,200,0.2);
+    font-family: @font-family-body;
+    font-size: @para-font-size;
+    color: @font-color-body;
+    padding: 4px 15px;
 }
 
 #chepnet > .container-wrapper {
@@ -256,6 +270,7 @@ figure figcaption {
 
 #chepnet .section-title {
     margin-top: 40px;
+    //color: #3f9559;
 }
 
 #chepnet .section-title-social {
@@ -264,7 +279,7 @@ figure figcaption {
     font-size: 30px;
 }
 
-#chepnet .well {
+#chepnet #events .well {
     min-height: 20px;
     padding: 19px;
     margin-bottom: 20px;
@@ -274,4 +289,11 @@ figure figcaption {
     border-radius: 4px;
     -webkit-box-shadow: none;
     box-shadow: none;
+    font-family: @font-family-body;
+    font-size: @para-font-size;
+    color: @font-color-body;
+}
+
+#chepnet #events .well a {
+    color: @font-color-body;
 }
